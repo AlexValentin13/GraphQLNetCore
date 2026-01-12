@@ -1,0 +1,19 @@
+GraphQL sigue las convenciones REST en varios aspectos, pero introduce una nueva forma de interactuar con los datos que supera
+algunas de las limitaciones de REST. Aquí hay algunas diferencias clave:
+
+1. Estructura de las solicitudes:
+   - En REST, cada recurso tiene su propia URL y se accede a través de diferentes endpoints (por ejemplo, `/users`, `/posts`).
+   - En GraphQL, todas las solicitudes se realizan a un único endpoint (por ejemplo, `/graphql`), y la estructura de la solicitud define qué datos se desean.
+
+   REST tiene una estructura:
+   - Cliente -> Servidor: usa verbos HTTP.
+		* GET: recueprar
+		* POST: agregar, crear o modificar
+		* PUT: modificar recursos
+		* DELETE: eliminar recursos
+   - Stateless: cada solicitud es independiente. Se actualiza el estado de la API con base a tokens JWT
+   - Endopoints: cada recurso tiene su propio endpoint.
+   - Problemas:
+		* los endpoints pueden crecer de forma descontrolada y volverse difíciles de manejar.
+		* Overfetching: se recibe más información de la necesaria.
+		* Underfetching: no se recibe toda la información necesaria en una sola solicitud.

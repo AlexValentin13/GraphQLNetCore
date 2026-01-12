@@ -1,0 +1,13 @@
+GraphQL
+
+- Es un lenguaje de consultas para nuestras APIS.
+- Es una herramienta más eficiente, poderosa y flexible para construir APIs.
+- Permite a los clientes especificar exactamente qué datos necesitan.
+- El cliente tiene el control sobre los datos que recibe.
+- El servidor expone un esquema fuertemente tipado que define los tipos de datos y las relaciones entre ellos.
+- El servidor expone un solo endpoint para todas las operaciones de datos.
+- Es una solución fuertemente tipada.
+
+GraphQL VS REST
+- En REST, cada recurso tiene su propia URL y se accede a través de diferentes endpoints
+- GraphQL usa el verbo POST para las operaciones QUERY y MUTATION.

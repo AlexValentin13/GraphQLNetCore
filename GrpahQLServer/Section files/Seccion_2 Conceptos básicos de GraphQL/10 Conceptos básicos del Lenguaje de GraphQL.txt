@@ -1,0 +1,21 @@
+ESQUEMA GraphQL
+
+Es el contrato entre el servidor y el cliente. Define los tipos de datos, las consultas
+y las mutaciones que el servidor puede manejar.
+Del mismo modo, define cómo los clientes pueden solicitar datos y qué operaciones pueden realizar.
+Es una capa de abstracción que permite a los desarrolladores definir de manera clara y estructurada.
+
+Un esquema es una colección de tipos de objetos que contienen campos y cada campo tiene un tipo de dato asociado.
+
+Tipos de datos comunes en GraphQL:
+	- Scalar Types: Tipos de datos primitivos (Int, Float, String, Boolean, ID).
+	- Object Types: Definen objetos con campos específicos.
+	- Enum Types: Definen un conjunto de valores posibles para un campo.
+	- Input Types: Definen la estructura de los datos que se envían al servidor en mutaciones.
+	- Interface Types: Definen un conjunto de campos que otros tipos pueden implementar.
+	- Union Types: Permiten que un campo pueda ser de varios tipos diferentes.
+
+Existen tres tipos de datos que son especiales en el equema de graphQL:
+- Query: Define las operaciones de lectura de datos (GET).
+- Mutation: Define las operaciones de escritura o modificación de datos (PUT, POST, DELETE).
+- Subscription: Define las operaciones para recibir actualizaciones en tiempo real.
