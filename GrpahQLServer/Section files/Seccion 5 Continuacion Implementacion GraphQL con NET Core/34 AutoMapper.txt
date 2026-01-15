@@ -1,0 +1,12 @@
+AutoMapper:
+Es una herramienta que permite hacer mapeos entre objetos de diferentes tipos
+de manera sencilla y eficiente.
+Es decir, se puede hacer un mapeo entre un objeto de tipo A y un objeto de tipo B.
+
+Una vez instlado desde NuGet, se debe dar de alta en el contendedor de servicios Program.cs.
+
+La configuración de AutoMapper se hace a través del archivo:
+- GrpahQLServer/Helpers/MappingProfile.cs
+
+Una vez configuradas las reglas de mapeo, se debe modificar las Mutaciones existentes
+para usar ahora estos mapeos en lugar de asignar manualmente las propiedades.

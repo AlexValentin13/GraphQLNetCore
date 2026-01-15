@@ -3,8 +3,13 @@ using GrpahQLServer.GraphQL;
 using GrpahQLServer.MethodExtensions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Migrations;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Esto permite agregar el Mapper al contenedor de Servicios, y permitirá agregar todas las
+// clases que hereden de Profile dentro del ensamblado principal
+builder.Services.AddAutoMapper(Assembly.GetEntryAssembly());
 
 // Se agrega GraphQL al contenedor
 builder.Services
