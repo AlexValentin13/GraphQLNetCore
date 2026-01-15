@@ -3,9 +3,11 @@ using GraphQLServer.Models;
 using GrpahQLServer.Data;
 using GrpahQLServer.GraphQL.Types;
 
-namespace GrpahQLServer.GraphQL;
+namespace GrpahQLServer.GraphQL.Publicaciones;
 
-public class Mutation
+
+[ExtendObjectType(OperationTypeNames.Mutation)]
+public class PublicacionesMutations
 {
     public async Task<PublicacionPayload> CreatePublicacion (
         BlogContext context,
@@ -45,6 +47,7 @@ public class Mutation
             if (publicacionDb is null) return false;
 
             context.Publicaciones.Remove(publicacionDb);
+            await context.SaveChangesAsync();
 
             return true;
 

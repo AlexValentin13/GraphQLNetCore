@@ -1,0 +1,15 @@
+Sourcegeneratos:
+Es una herramienta que nos permite inspeccionar nuestro código fuente y con base en ello generar
+nuevos archivos y utilidades, con el fin de tener la aplicación bien estructurada.
+
+Esto se logra con el NuGet:
+- HotChocolate.Types.Analyzers
+
+Para que esto funcione, ahora podemos inspeccionar en Program.cs:
+- ....AddGrpahQLServerTypes()
+
+Esta función es generada de la siguiente manera:
+- Add + "Project name" + Types.cs
+
+Si se desea cambiar el nombre de esa clase, se tiene que crear un nuevo archivo desde la raíz:
+- ModuleInfo.cs

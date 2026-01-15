@@ -1,0 +1,7 @@
+Debido a que en un futuro es posible tener una cantidad muy grande de RESOLVERS (queries y mutations),
+es necesario seccionar el código organizado.
+
+Se pueden separar po directorios por los tipos de acciones.
+
+Al momento de estructurar mejor el código, las queries y mutations deben de extender de sus clases correspondientes para que puedan ser
+registradas en el contenedor de servicios

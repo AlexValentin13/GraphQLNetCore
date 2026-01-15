@@ -1,0 +1,1 @@
+﻿// [assemby: Module("ServidorGraphQLTypes")]

@@ -1,0 +1,3 @@
+CORS:
+Es un estandard que contienen los navegadores para indicar cuando un cliente puede o no acceder a los
+recursos REST desde un dominio diferente.

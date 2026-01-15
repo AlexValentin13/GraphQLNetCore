@@ -1,0 +1,102 @@
+# Obtiene Publicacion con Paginacion
+query obtenerPublicaciones{
+    publicaciones(
+      after: "MQ==" # Implementación de paginaicón
+      where: {
+        id: {
+          eq: 1
+        }
+      }
+      order: {
+        id:DESC
+      }
+    )
+    {
+      pageInfo
+      {
+        hasNextPage
+        hasPreviousPage
+        startCursor
+        endCursor
+      }
+      nodes
+      {
+        id
+        titulo
+        contenido
+        estado
+      }
+    }
+}
+
+# Obtiene Publicacion por ID
+query obtenerPublicacion {
+  publicacion (
+    id: 7
+  )
+  {
+    id
+    titulo
+    estado
+    rating
+    autor {
+      id
+      nombre
+    }
+    categoria {
+      id
+      nombre
+    }
+  }
+}
+
+# Crea una nueva Publicacion
+mutation createPublication($inputPublicacion:PublicacionInputTypeInput!){
+  createPublicacion(inputPublicacion : $inputPublicacion)
+  {
+    id
+    titulo
+    imagenUrl
+    rating
+    estado
+  }
+}
+
+# Modifica una Publicacion
+mutation updatePublication(
+  $inputPublicacion:PublicacionInputTypeInput!,
+  $id:Int!
+){
+  updatePublicacion(
+    inputPublicacion: $inputPublicacion,
+    id: $id
+  )
+  {
+    id
+    titulo
+    imagenUrl
+    rating
+    estado
+  }
+}
+
+# Elimina una Publicacion
+mutation deletePublicacion($id: Int!) {
+  deletePublicacion (id: $id)
+}
+
+
+
+Variables
+{
+    "inputPublicacion" : {
+        "autorId": 2,
+        "categoriaId": 3,
+        "contenido": "Contenido de mi nueva publicación",
+        "titulo": "Título de mi octava publicación",
+        "imagenUrl": "https://picsum.photos/id/237/200/300",
+        "rating": 4,
+        "estado": "ACTIVA"
+    },
+    "id": 7
+}

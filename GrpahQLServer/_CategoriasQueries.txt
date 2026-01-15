@@ -1,0 +1,38 @@
+query obtenerCategoria($id: Int!) {
+  categoria (
+    id: $id
+  )
+  {
+    id
+    nombre
+  }
+}
+
+query obtenerCategorias{
+    categorias {
+      pageInfo
+      {
+        hasNextPage
+        hasPreviousPage
+        startCursor
+        endCursor
+      }
+      nodes
+      {
+        id
+        nombre
+      }
+    }
+}
+
+mutation crearCategoria($inputCategoria: CategoriaInputTypeInput!){
+  createCategoria(inputCategoria : $inputCategoria)
+  {
+    id
+    nombre
+  }
+}
+
+mutation deleteCategoria($id: Int!) {
+  resultado: deleteCategoria (id: $id)
+}

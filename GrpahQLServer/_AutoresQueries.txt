@@ -1,0 +1,47 @@
+query obtenerAutor($id: Int!) {
+  autor (
+    id: $id
+  )
+  {
+    id
+    nombre
+    apellidos
+    correoElectronico
+    salario
+  }
+}
+
+query obtenerAutores{
+    autores {
+      pageInfo
+      {
+        hasNextPage
+        hasPreviousPage
+        startCursor
+        endCursor
+      }
+      nodes
+      {
+        id
+        nombre
+        apellidos
+        correoElectronico
+        salario
+      }
+    }
+}
+
+mutation crearAutor($inputAutor: AutorInputTypeInput!){
+  createAutor(inputAutor : $inputAutor)
+  {
+    id
+    nombre
+    apellidos
+    correoElectronico
+    salario
+  }
+}
+
+mutation deleteAutor($id: Int!) {
+  resultado: deleteAutor (id: $id)
+}

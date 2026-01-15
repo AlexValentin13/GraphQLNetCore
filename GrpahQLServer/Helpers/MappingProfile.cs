@@ -20,5 +20,17 @@ public class MappingProfile: Profile
             .ReverseMap()
             .ForMember(u => u.Autor, pubInput => pubInput.Ignore())
             .ForMember(u => u.Categoria, pubInput => pubInput.Ignore());
+
+        CreateMap<Autor, AutorInputType>()
+            .ReverseMap();
+
+        CreateMap<Autor, AutorPayload>()
+            .ReverseMap();
+
+        CreateMap<Categoria, CategoriaInputType>()
+            .ReverseMap();
+
+        CreateMap<Categoria, CategoriaPayload>()
+            .ReverseMap();
     }
 }
