@@ -1,0 +1,6 @@
+Desde:
+
+Tools -> Nuget Package Manager -> Package Manager Console
+
+Se ejecutan los siguientes comandos para realizar la migración:
+- Add-Migration ModeloInicial

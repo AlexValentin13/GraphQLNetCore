@@ -1,0 +1,3 @@
+- [UseFiltering]: permite hacer uso de filtros o aplicar filtros al conjunto de datos recuperado
+                  del consumo de los queries.
+                  Del mismo modo que las proyecciones, este se debe habilitar desde Program.cs

@@ -1,0 +1,4 @@
+Para usar las funciones de migración de Entity Framework, se necesita crear una función de
+utilidad que permita implementar todas las migraciones pendientes.
+Este proceso se lorga a través del código dentro del folder:
+- MethodExtensions

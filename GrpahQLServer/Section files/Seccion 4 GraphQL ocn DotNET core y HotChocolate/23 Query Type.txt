@@ -1,0 +1,10 @@
+Se creó el primer objeto query dentro del directorio:
+- GraphQL
+
+El objeto o clase se llamará:
+- Query
+
+Este nuevo objeto se usará para las consultas. Una vez creado, es necesario registrar el nuevo
+objeto en Program.cs (en el contenedor) en donde se dió de alta GraphQL.
+
+También en Program.xs se debe notificar a graphql que se usará el CONTEXTO

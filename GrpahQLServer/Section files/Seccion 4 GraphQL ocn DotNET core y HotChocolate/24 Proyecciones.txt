@@ -1,0 +1,2 @@
+La proyecciones permiten agregar ATRIBUTOS a los Resolvers para que se puedan incluir o no
+campos en las consultas según hayan o no hayan sido solicitados

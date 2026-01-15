@@ -1,0 +1,4 @@
+Una vez instalada la extensión:
+- https://marketplace.visualstudio.com/items?itemName=MadsKristensen.AddNewFile
+
+Se usa: Alt + F12

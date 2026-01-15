@@ -1,0 +1,8 @@
+Para el modelo de datos (aquellos archivos dentro de la carpeta MODELS), los campos pueden ser definidos a través de dos opciones:
+1. Usar DATA NOTATIONS.
+2. Características de FLUENT API.
+
+Fluent API permite declarar las características o propiedades en una clase separada. Fluent API también permite
+declarar en la nueva clase las relaciones entre las diferentes tablas.
+
+Para esto se crea un directorio dentro de DATA.

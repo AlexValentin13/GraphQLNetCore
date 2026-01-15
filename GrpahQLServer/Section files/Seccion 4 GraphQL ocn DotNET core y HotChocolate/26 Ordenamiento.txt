@@ -1,0 +1,2 @@
+- [UseSorting]: permite que HotChocolate agregue las características necesarias para poder
+                ordenar los resultados recuperados por las consultas con base al´gún atributo.

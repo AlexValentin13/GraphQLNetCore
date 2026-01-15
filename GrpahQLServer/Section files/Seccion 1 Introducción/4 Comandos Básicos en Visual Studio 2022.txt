@@ -1,0 +1,10 @@
+- Ctrl + Tab = Permite navegar entre documentos abiertos
+- Ctrl + Q = Permite buscar desde VS 2022
+- F6 = Compila el código
+- Ctrl + F5 = Ejecuta el código o la aplicación
+- F5 = Depura la aplicación
+- F9 = Fija puntos de interrupción para la depuración
+- Ctrl + Mayúscula + F9 = Quita todos los puntos de interrupción
+- F12 = Salta a la definición de un elemento
+- Ctrl + R / Ctrl + G = Quitar y Ordenar usos (USINGs)
+- Ctrl + E, D = Formatea el documento

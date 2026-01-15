@@ -1,0 +1,3 @@
+Para crear esta clase es necesario instalar dos paquetes adcionales:
+- Microsoft.EntityFrameworkCore.SqlServer: Permite la conexión a la DB
+- Microsoft.EntityFrameworkCore.Tools: permite con migraciones desde Visual Studio

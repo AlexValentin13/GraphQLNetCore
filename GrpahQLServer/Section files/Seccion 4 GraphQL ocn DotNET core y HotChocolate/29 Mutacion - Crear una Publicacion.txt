@@ -1,0 +1,14 @@
+Mutación:
+Es un opbjeto principal de graphQL que se encarga de agregar, modificar o eliminar registros.
+
+Para las mutaciones, comúnmente se usan métodos asíncronos.
+
+Las mutaciones deben tener un input type (un objeto)
+- GraphQL/Types/...InputType.cs
+
+Del mismo modo, se debe agregar un objeto que será el output del proceso de una mutación
+- GraphQL/Types/...FileNamePayload.cs
+
+El proceso de creación de los archivos de Mutaciones es para seguir las convenciones Relay:
+- ...InputType.cs
+- ...Payload.cs

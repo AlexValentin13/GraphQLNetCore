@@ -1,0 +1,8 @@
+Se usan dos paqueterías:
+- HotChocolate.AspNetCore
+- HotChocolate.Data.EntityFramework: permite integrar ocn EF core
+
+Una vez instlados estos paquetes, se dan de alta en el contenedor principal desde Program.cs
+
+Para fines de depuración, se cambia el puerto a 5000 (http) y 5001 (https) en:
+- launchSettings.json

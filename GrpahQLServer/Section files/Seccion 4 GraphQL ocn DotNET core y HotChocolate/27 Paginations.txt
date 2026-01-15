@@ -1,0 +1,15 @@
+En el desarrollo de API la paginación es un punto crucial que debe ser implementado.
+En GraphQL se tiene el método de paginación llamado:
+- Cursor
+
+Esta característica se habilita a través del atributo:
+- [UsePaging]
+
+Cabe mencionar que el orden de los atributos es muy importante.
+1. Paginación
+2. Proyección
+3. Filtrado
+4. Ordenamiento
+
+Al usar la paginación, desde el cliente, no se va a devolver un conjunto de datos en la
+primera instancia, en su lugar, se recibirá un objeto de tipo CONNECTION.
